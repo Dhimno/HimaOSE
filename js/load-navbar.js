@@ -108,16 +108,20 @@ document.addEventListener("DOMContentLoaded", function () {
         };
       });
 
-      // ketika windows di scroll
-      window.addEventListener("scroll", function () {
-        const navbar = document.querySelector(".navbar");
-
+      // ketika windows di scroll (dan pada initial load)
+      const updateNavbarScrolledState = () => {
+        const bar = document.querySelector(".navbar");
+        if (!bar) return;
         if (window.scrollY > 100) {
-          navbar.classList.add("scrolled");
+          bar.classList.add("scrolled");
         } else {
-          navbar.classList.remove("scrolled");
+          bar.classList.remove("scrolled");
         }
-      });
+      };
+
+      // panggil sekali saat load (untuk kasus mendarat di #about, dll)
+      updateNavbarScrolledState();
+      window.addEventListener("scroll", updateNavbarScrolledState);
     })
     .catch(function (error) {
       console.error(error);
