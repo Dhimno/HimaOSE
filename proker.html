@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proker Unggulan - HIMAOSE</title>
+
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo/favicon.ico" />
+
+    <!-- Global styles -->
+    <link rel="stylesheet" href="assets/css/proker-unggulan.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+
+    <!-- Feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div id="navbar"></div>
+
+    <!-- Header -->
+    <section class="proker-header">
+      <h1>Program Kerja</h1>
+      <p>
+        Program-program yang kami rancang untuk memberikan dampak nyata dan
+        pengalaman berharga
+      </p>
+    </section>
+
+    <!-- Main -->
+    <main class="main-proker">
+      <div class="proker-content">
+        <div class="card-proker">
+          <div class="card-text active" onclick="showVM('sekretaris', this)">
+            <p>Sekretaris</p>
+          </div>
+          <div class="card-text" onclick="showVM('bendahara', this)">
+            <p>Bendahara</p>
+          </div>
+          <div class="card-text" onclick="showVM('DAGRI', this)">
+            <p>DAGRI</p>
+          </div>
+          <div class="card-text" onclick="showVM('PSDM', this)">
+            <p>PSDM</p>
+          </div>
+          <div class="card-text" onclick="showVM('DIMAS', this)">
+            <p>DIMAS</p>
+          </div>
+          <div class="card-text" onclick="showVM('HUMAS', this)">
+            <p>HUMAS</p>
+          </div>
+          <div class="card-text" onclick="showVM('EKOTIF', this)">
+            <p>EKOTIF</p>
+          </div>
+          <div class="card-text" onclick="showVM('KESMA', this)">
+            <p>KESMA</p>
+          </div>
+          <div class="card-text" onclick="showVM('SENIORA', this)">
+            <p>SENIORA</p>
+          </div>
+          <div class="card-text" onclick="showVM('MI', this)">
+            <p>MI</p>
+          </div>
+          <div class="card-text" onclick="showVM('ILBANG', this)">
+            <p>ILBANG</p>
+          </div>
+        </div>
+
+        <div class="box-wrapper">
+          <div class="box active" id="sekretaris">
+            <div class="box-proker active">
+              <i data-feather="database"></i>
+
+              <div class="oprec-text">
+                <h3>Database Pengurus</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+            <div class="box-proker active">
+              <i data-feather="mail"></i>
+
+              <div class="oprec-text">
+                <h3>Penyediaan Surat Menyurat</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker active">
+              <i data-feather="archive"></i>
+
+              <div class="oprec-text">
+                <h3>Paketan Pengurus</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box" id="bendahara">
+            <div class="box-proker">
+              <i data-feather="book"></i>
+
+              <div class="oprec-text">
+                <h3>Pembukuan</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+            <div class="box-proker">
+              <i data-feather="dollar-sign"></i>
+
+              <div class="oprec-text">
+                <h3>Uang Kas</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="check-circle"></i>
+
+              <div class="oprec-text">
+                <h3>Koordinasi Bidang</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="inbox"></i>
+
+              <div class="oprec-text">
+                <h3>Koordinasi Bendahara Kegiatan</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box" id="DAGRI">
+            <div class="box-proker">
+              <i data-feather="award"></i>
+
+              <div class="oprec-text">
+                <h3>Aniversary Night Of Marine (ATOM)</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+            <div class="box-proker">
+              <i data-feather="gift"></i>
+
+              <div class="oprec-text">
+                <h3>Apresiasi Wisuda</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="book"></i>
+
+              <div class="oprec-text">
+                <h3>Civitas Akademika</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="users"></i>
+
+              <div class="oprec-text">
+                <h3>Pengenalan Departemen</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box" id="PSDM">
+            <div class="box-proker">
+              <i data-feather="user-plus"></i>
+
+              <div class="oprec-text">
+                <h3>Open Recruitment</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+            <div class="box-proker">
+              <i data-feather="book-open"></i>
+
+              <div class="oprec-text">
+                <h3>Pencerdasan Dasar (Pedas)</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="mail"></i>
+
+              <div class="oprec-text">
+                <h3>OCEAN</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="sun"></i>
+
+              <div class="oprec-text">
+                <h3>
+                
+                  LKMMPD
+                </h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="users"></i>
+
+              <div class="oprec-text">
+                <h3>OCEANSHIP</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="briefcase"></i>
+
+              <div class="oprec-text">
+                <h3>Musyawarah Besar (Mubes)</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box" id="EKOTIF">
+            <div class="box-proker">
+              <i data-feather="shopping-bag"></i>
+
+              <div class="oprec-text">
+                <h3>Oseshop</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+            <div class="box-proker">
+              <i data-feather="info"></i>
+
+              <div class="oprec-text">
+                <h3>Infortif</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="bookmark"></i>
+
+              <div class="oprec-text">
+                <h3>Osenso</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="figma"></i>
+
+              <div class="oprec-text">
+                <h3>Sayembara Design</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="briefcase"></i>
+
+              <div class="oprec-text">
+                <h3>Osepreneur</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box" id="HUMAS">
+            <div class="box-proker">
+              <i data-feather="eye"></i>
+
+              <div class="oprec-text">
+                <h3>Company Visit</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+            <div class="box-proker">
+              <i data-feather="briefcase"></i>
+
+              <div class="oprec-text">
+                <h3>Roadshow</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box" id="DIMAS">
+            <div class="box-proker">
+              <i data-feather="heart"></i>
+
+              <div class="oprec-text">
+                <h3>Oseanografi Love (Oslo)</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+            <div class="box-proker">
+              <i data-feather="book-open"></i>
+
+              <div class="oprec-text">
+                <h3>Oceanography Care (Oscar)</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="star"></i>
+
+              <div class="oprec-text">
+                <h3>Gerakan Edukasi Pesisir Pantai (Gesit)</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="anchor"></i>
+
+              <div class="oprec-text">
+                <h3>Oceanography Coastal Service (Oasis)</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="book-open"></i>
+
+              <div class="oprec-text">
+                <h3>Edukasi Kelautan (Edukel)</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box" id="KESMA">
+            <div class="box-proker">
+              <i data-feather="mail"></i>
+
+              <div class="oprec-text">
+                <h3>Banding UKT</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+            <div class="box-proker">
+              <i data-feather="heart"></i>
+
+              <div class="oprec-text">
+                <h3>Kesma Care</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="inbox"></i>
+
+              <div class="oprec-text">
+                <h3>Kesma Corner</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="info"></i>
+
+              <div class="oprec-text">
+                <h3>Kesma Info</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="users"></i>
+
+              <div class="oprec-text">
+                <h3>OMES (Oseanografi Menfess)</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="share"></i>
+
+              <div class="oprec-text">
+                <h3>OSS (Oseanografi Sharing Session)</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="book-open"></i>
+
+              <div class="oprec-text">
+                <h3>Civitas Akademika</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box" id="SENIORA">
+            <div class="box-proker">
+              <i data-feather="star"></i>
+
+              <div class="oprec-text">
+                <h3>Marine Fun</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+            <div class="box-proker">
+              <i data-feather="sun"></i>
+
+              <div class="oprec-text">
+                <h3>Marine Sports Week</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="anchor"></i>
+
+              <div class="oprec-text">
+                <h3>Marine Exhibition</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="activity"></i>
+
+              <div class="oprec-text">
+                <h3>Sports and Arts Education</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box" id="MI">
+            <div class="box-proker">
+              <i data-feather="inbox"></i>
+
+              <div class="oprec-text">
+                <h3>Pengelolaan Sosial Media</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+            <div class="box-proker">
+              <i data-feather="gift"></i>
+
+              <div class="oprec-text">
+                <h3>Apresiasi Wisuda</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="archive"></i>
+
+              <div class="oprec-text">
+                <h3>Dokumentasi dan Publikasi</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="eye"></i>
+
+              <div class="oprec-text">
+                <h3>Sapa Osi</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="user"></i>
+
+              <div class="oprec-text">
+                <h3>Company Profile</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="bookmark"></i>
+
+              <div class="oprec-text">
+                <h3>Cerdas Media</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="book-open"></i>
+
+              <div class="oprec-text">
+                <h3>Civitas Akademika</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="box" id="ILBANG">
+            <div class="box-proker">
+              <i data-feather="bookmark"></i>
+
+              <div class="oprec-text">
+                <h3>Informasi tentang Riset (Interest)</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+            <div class="box-proker">
+              <i data-feather="book-open"></i>
+
+              <div class="oprec-text">
+                <h3>Oceanopedia</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="star"></i>
+
+              <div class="oprec-text">
+                <h3>School of Marine Research (SOMR)</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+
+            <div class="box-proker">
+              <i data-feather="book"></i>
+
+              <div class="oprec-text">
+                <h3>Osaka</h3>
+                <p>Status : Akan datang</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER ROOT -->
+    <div id="footer-root"></div>
+
+    <!-- Shared layout scripts -->
+    <script src="js/load-navbar.js"></script>
+    <script src="js/load-footer.js"></script>
+
+    <!-- Proker  -->
+    <script src="js/proker.js"></script>
+  </body>
+</html>
