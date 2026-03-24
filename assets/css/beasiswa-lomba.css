@@ -392,22 +392,6 @@ You said :root {
   padding: 2rem;
 }
 
-.not-found {
-  display: flex;
-  flex-direction: column;
-  background: #f3f3f3;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border: 1px solid #f0f0f0;
-  border-radius: 30px;
-  align-items: center;
-  padding: 2rem;
-
-  margin: 2rem auto;
-  width: 100%;
-  max-width: 500px;
-  grid-column: 1 / -1;
-}
-
 /* Lomba Section */
 .lomba-section {
   padding-bottom: 1rem;
@@ -548,8 +532,13 @@ You said :root {
   border: 1px solid #f0f0f0;
   border-radius: 30px;
   align-items: center;
+  text-align: center;
   padding: 2rem;
-  max-width: 48%;
+
+  margin: 2rem auto;
+  width: 100%;
+  max-width: fit-content;
+  grid-column: 1 / -1;
 }
 
 /* ========================= */
@@ -607,6 +596,9 @@ You said :root {
     border-radius: 20px;
   }
 
+  .not-found-beasiswa {
+    text-align: center;
+  }
   .not-found {
     text-align: center;
     max-width: 80%;
