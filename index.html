@@ -101,14 +101,10 @@
             <h3 class="footer-title">Menu</h3>
             <ul class="footer-nav">
               <li>
-                <a href="/" id="home" class="nav-menu selected"
-                  >Beranda</a
-                >
+                <a href="/" id="home" class="nav-menu selected">Beranda</a>
               </li>
               <li>
-                <a href="#/profil" id="profil" class="nav-menu"
-                  >Tentang Kami</a
-                >
+                <a href="#/profil" id="profil" class="nav-menu">Tentang Kami</a>
               </li>
               <li><a href="#/bidang">Bidang</a></li>
               <li><a href="#">Beasiswa & Lomba</a></li>
@@ -126,8 +122,7 @@
                 <span class="contact-icon">📍</span>
                 <span class="contact-text">
                   Fakultas Perikanan dan Ilmu Kelautan Universitas Diponegoro
-                  Jl. Prof. Jacub Rais, Tembalang
-                  Semarang, Jawa Tengah, 50275
+                  Jl. Prof. Jacub Rais, Tembalang Semarang, Jawa Tengah, 50275
                 </span>
               </li>
               <li>
@@ -304,7 +299,7 @@
                     );
                   } else {
                     containerBeasiswa.innerHTML = `
-                      <div class="not-found">
+                      <div class="not-found-beasiswa">
                         <i data-feather="info"></i>
                         <p>Tidak ada beasiswa yang sedang buka pendaftaran nih!</p>
                         <span>Pantau terus sosial media kami untuk info terbaru.</span>
@@ -314,7 +309,7 @@
                   }
                 } catch {
                   containerBeasiswa.innerHTML = `
-                      <div class="not-found">
+                      <div class="not-found-beasiswa">
                         <i data-feather="info"></i>
                         <p>Tidak dapat mendapatkan data informasi beasiswa yang sedang buka pendaftaran.</p>
                         <span>Silahkan coba lagi nanti.</span>
@@ -355,7 +350,7 @@
                           </div>
 
                           <div class="link-lomba">
-                            <a href="https://www.instagram.com/undip.himaose" class="box-link-lomba">Daftar Sekarang →</a>
+                            <a href="${item.link_pendaftaran}" class="box-link-lomba" target="_blank">Daftar Sekarang →</a>
                           </div>
                         </div>`,
                     );

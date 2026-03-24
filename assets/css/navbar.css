@@ -181,7 +181,7 @@ nav {
     font-size: 1.5rem;
     transition: 0.2s ease;
   }
-  .nav .nav-menu.selected {
+  .nav .nav-menu.selected{
     border-radius: 0rem;
     padding: 1rem 2.7rem;
     background-color: rgb(255, 251, 251);
