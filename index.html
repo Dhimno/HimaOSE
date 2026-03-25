@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="./assets/css/ketua.css" />
     <link rel="stylesheet" href="./assets/css/oprec.css" />
     <link rel="stylesheet" href="./assets/css/beasiswa-lomba.css" />
+    <link rel="stylesheet" href="./assets/css/loader.css" />
 
     <!-- Feather -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -176,6 +177,10 @@
     <script src="./js/scroll-animations.js"></script>
     <script src="./js/profil.js"></script>
     <script>
+      function renderLoader(container) {
+        return (container.innerHTML = `<div class="loader"></div>`);
+      }
+
       $(document).ready(function () {
         // navoigo
         const router = new Navigo("/", { hash: true });
@@ -259,6 +264,9 @@
                     )
                     .join("");
                 }
+
+                renderLoader(containerBeasiswa);
+                renderLoader(containerLomba);
 
                 try {
                   const responseBeasiswa = await axios.get(
@@ -384,6 +392,8 @@
               async function () {
                 console.log("Halaman Oprec siap, memulai render data...");
                 const container = document.getElementById("list-oprec");
+
+                renderLoader(container);
 
                 try {
                   const response = await axios.get(
