@@ -270,15 +270,10 @@
 
                 try {
                   const responseBeasiswa = await axios.get(
-                    "http://127.0.0.1:3000/v1/beasiswa/all",
-                  );
-
-                  const responseLomba = await axios.get(
-                    "http://127.0.0.1:3000/v1/lomba/all",
+                    "https://fhndwiyan-project-himaose.hf.space/v1/beasiswa/all",
                   );
 
                   const beasiswaData = responseBeasiswa.data.data;
-                  const LombaData = responseLomba.data.data;
 
                   if (containerBeasiswa && beasiswaData.length > 0) {
                     containerBeasiswa.innerHTML = beasiswaData.map(
@@ -328,7 +323,7 @@
 
                 try {
                   const responseLomba = await axios.get(
-                    "http://127.0.0.1:3000/v1/lomba/all",
+                    "https://fhndwiyan-project-himaose.hf.space/v1/lomba/all",
                   );
 
                   const lombaData = responseLomba.data.data;
@@ -397,7 +392,7 @@
 
                 try {
                   const response = await axios.get(
-                    "http://127.0.0.1:3000/v1/proker/all",
+                    "https://fhndwiyan-project-himaose.hf.space/v1/proker/all",
                   );
                   const prokerData = response.data.data;
 
